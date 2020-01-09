@@ -2,14 +2,14 @@
 /*  Basic Style 
 /* =================================== */
 
-::-moz-selection { /* Code for Firefox */
-    background-color: $primary-color;
-    color: $white;
-}
-::selection {
-    background-color: $primary-color;
-    color: $white;
-}
+// ::-moz-selection { /* Code for Firefox */
+//     background-color: $primary-color;
+//     color: $light;
+// }
+// ::selection {
+//     background-color: $primary-color;
+//     color: $light;
+// }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #777777;
     font-weight: 300;
@@ -34,11 +34,13 @@
 }
 body {
     color: $text-color;
-    font-family: $text-font;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.625em;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 ol, ul {
     margin: 0;
@@ -63,6 +65,7 @@ iframe {
 a, a:focus, a:hover {
     text-decoration: none;
     outline: 0;
+    color: $text-color;
 }
 .btn.active.focus,
 .btn.active:focus,
@@ -92,18 +95,18 @@ a, a:focus, a:hover {
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: $title-font;
+    font-family: $primary-font;
     color: $title-color;
-    line-height: 1.2em !important;
+    line-height: 1.5em;
     margin-bottom: 0;
     margin-top: 0;
-    font-weight: 600;
+    font-weight: 500;
 }
 .h1, .h2, .h3,
 .h4, .h5, .h6 {
     margin-bottom: 0;
     margin-top: 0;
-    font-family: $title-font;
+    font-family: $primary-font;
     font-weight: 600;
     color: $title-color;
 }
@@ -216,9 +219,7 @@ td, th {
 .pt-80       {padding-top: 80px;}
 .pt-90       {padding-top: 90px;}
 .pt-100      {padding-top: 100px;}
-.pt-120      {padding-top: 120px;}
 .pt-150      {padding-top: 150px;}
-.pt-170      {padding-top: 170px;}
 // padding-bottom
 .pb-0        {padding-bottom: 0px;}
 .pb-10       {padding-bottom: 10px;}
@@ -233,12 +234,10 @@ td, th {
 .pb-80       {padding-bottom: 80px;}
 .pb-90       {padding-bottom: 90px;}
 .pb-100      {padding-bottom: 100px;}
-.pb-120      {padding-bottom: 120px;}
 .pb-150      {padding-bottom: 150px;}
 // padding-Right
 .pr-30       {padding-right: 30px}
 .pl-30       {padding-left: 30px}
-.pl-90       {padding-left: 90px}
 
 // padding
 .p-40 {padding: 40px;}
@@ -253,13 +252,10 @@ td, th {
 
 .text-italic { font-style: italic; }
 .text-white { color: #fff; }
-.text-black { color: #000; }
 .transition  { @include transition();}
 .section-full { padding: 100px 0; }
 .section-half { padding: 75px 0; }
-.text-center{text-align:center;}
-.text-left{text-align:left;}
-.text-rigth{text-align:right;}
+
 
 .flex { @include flexbox();}
 .inline-flex { @include inline-flex();}
