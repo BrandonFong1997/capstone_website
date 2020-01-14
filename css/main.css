@@ -41,7 +41,7 @@
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.5em;
   position: relative;
@@ -1927,7 +1927,6 @@ body:after {
 .main-wrapper-first {
   width: 68.75%;
   margin: 0 auto;
-  margin-top: 6rem;
 }
 
 @media (min-width: 1200px) {
@@ -1938,14 +1937,14 @@ body:after {
 
 @media (max-width: 1199px) {
   .main-wrapper-first {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   .main-wrapper-first {
     margin-top: 3rem;
-    width: 97%;
+    width: 100%;
   }
 }
 
@@ -1962,13 +1961,13 @@ body:after {
 
 @media (max-width: 1199px) {
   .main-wrapper {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   .main-wrapper {
-    width: 97%;
+    width: 100%;
   }
 }
 
@@ -2543,4 +2542,23 @@ footer .copy-right-text a {
 
 .switch-wrap p {
   margin: 0;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
 }
