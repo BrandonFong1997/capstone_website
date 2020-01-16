@@ -1925,13 +1925,13 @@ body:after {
 }
 
 .main-wrapper-first {
-  width: 68.75%;
+  width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
   .main-wrapper-first {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -1949,13 +1949,13 @@ body:after {
 }
 
 .main-wrapper {
-  width: 68.75%;
+  width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
   .main-wrapper {
-    width: 75%;
+    width: 100%%;
   }
 }
 
@@ -1971,7 +1971,15 @@ body:after {
   }
 }
 
-.p1-gradient-bg, .primary-btn:after, .banner-area, .single-feature .icon:after, .service-area, .story-area, .single-widget .icon:after {
+.banner-area {
+  background-attachment: fixed;
+  background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%), -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%), -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%), url("../img/body-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p1-gradient-bg, .primary-btn:after, .single-feature .icon:after, .service-area, .story-area, .single-widget .icon:after {
   background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
   background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
   background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
@@ -2467,7 +2475,7 @@ footer .copy-right-text {
 }
 
 footer .copy-right-text a {
-  color: #e66686;
+  color: #fff;
 }
 
 .footer-social a {
