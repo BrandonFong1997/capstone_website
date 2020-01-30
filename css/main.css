@@ -2016,7 +2016,7 @@ body:after {
   line-height: 40px;
   padding: 0 30px;
   border-radius: 20px;
-  background: transparent;
+  /* background: transparent; */
   border: 1px solid #fff;
   color: #222222;
   display: inline-block;
@@ -2027,6 +2027,9 @@ body:after {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+  background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+  background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
 }
 
 .primary-btn:focus {
