@@ -1925,6 +1925,40 @@ body:after {
   z-index: -1;
 }
 
+.tech-logo {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.tech-logo-desc {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tech-logo-container:hover .tech-logo {
+  opacity: 0.3;
+}
+
+.tech-logo-container:hover .tech-logo-desc {
+  opacity: 1;
+}
+
+.tech-logo-desc-text {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 .main-wrapper-first {
   width: 100%;
   margin: 0 auto;
