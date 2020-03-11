@@ -1990,7 +1990,7 @@ body:after {
 
 @media (min-width: 1200px) {
   .main-wrapper {
-    width: 100%%;
+    width: 100%;
   }
 }
 
@@ -2139,6 +2139,7 @@ body:after {
   border-radius: 3px;
   border: 1px solid #eeeeee;
   position: relative;
+  background-color: #eeeeee;
 }
 
 .single-feature .icon span {
